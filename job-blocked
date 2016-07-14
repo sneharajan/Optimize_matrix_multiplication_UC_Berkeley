@@ -1,0 +1,9 @@
+#PBS -V
+#PBS -q shared
+#PBS -A TG-CCR140008
+#PBS -l nodes=1:ppn=1
+#PBS -j oe
+#PBS -o job-blocked.stdout
+
+cd $PBS_O_WORKDIR
+./benchmark-blocked
